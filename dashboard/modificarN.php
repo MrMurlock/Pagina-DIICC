@@ -34,17 +34,17 @@ include_once "../include/dashboard/head.php";
                             </div>
 
                             <div class="input-group">
-                                <input class="form-control" type="file" name="img">
+                                <input class="form-control" type="file" name="img" value="">
                                 <span class="input-group-addon" id="basic-addon2"><i class="bi bi-file-image"></i></span>
                             </div>
 
                             <div class="input-group">
                                 <span class="input-group-addon" id="basic-addon3"><i class="bi bi-paint-bucket"></i></span>
-                                <textarea class="form-control" name="descripcion" placeholder="Descripcion" style="height: 250px;"><?php echo sprintf('value="%s"',  $mostrar['descripcion']); ?></textarea>
+                                <textarea class="form-control" name="descripcion" placeholder="Descripcion" style="height: 250px;"><?php echo $mostrar['descripcion']; ?></textarea>
                             </div>
 
                             <div class="container-bttn p-3 row">
-                                <button type="submit" class="btn btn-primary">Modificar</button>
+                                <button type="submit" class="btn btn-primary" name="submit">Modificar</button>
                             </div>
                         </form>
                     </div>
